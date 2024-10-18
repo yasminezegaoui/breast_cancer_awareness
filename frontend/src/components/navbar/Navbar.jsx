@@ -15,8 +15,8 @@ const Navbar = () => {
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#cancer-info">Cancer Info</a></li>
-          <li><a href="#signup" id="quiz-link" className="disabled">Symptom Quiz</a></li>
-          <li><a href="#signup" id="blog-link" className="disabled">Blog</a></li>
+          <li><a href="#signin" id="quiz-link" className="disabled">Symptom Quiz</a></li>
+          <li><a href="#signin" id="blog-link" className="disabled">Blog</a></li>
         </ul>
       </nav>
     </>
