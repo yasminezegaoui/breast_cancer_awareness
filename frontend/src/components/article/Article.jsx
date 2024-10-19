@@ -1,7 +1,7 @@
 import React from 'react'
 import './article.css';
 import { useNavigate } from 'react-router-dom';
-
+//
 const Article = () => {
   const navigate = useNavigate();
 
