@@ -18,6 +18,10 @@ const CancerInfo = () => {
     navigate('/blog');
   };
 
+  const handleBreastCancerClick = () => {
+    navigate('/what_is_breast_cancer');
+  };
+
   return (
   <>
     <Navbar/>
@@ -41,7 +45,7 @@ const CancerInfo = () => {
         </div>
       <h3>What is Breast Cancer?</h3>
       <p>Look Good Feel Better for Teens is a unique, free program for teenage cancer patients.</p>
-      <span>Read More</span>
+      <span onClick={handleBreastCancerClick}>Read More</span>
     </div>
     <div class="info-card">
         <div class="icon-container">

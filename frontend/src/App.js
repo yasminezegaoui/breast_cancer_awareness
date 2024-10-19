@@ -8,6 +8,7 @@ import HomePage from './Main/HomePage.jsx';
 import Blog from './pages/blog/Blog.jsx';
 import SelfExamination from './pages/self_examination/SelfExamination.jsx';
 import CancerInfo from './pages/cancer_information/CancerInfo.jsx';
+import BreastCancer from './pages/breast_cancer/BreastCancer.jsx';
 
 import {
   createBrowserRouter,
@@ -64,6 +65,11 @@ const router = createBrowserRouter([
   {
     path: "about_us",
     element: <AboutUs/>
+  },
+
+  {
+    path: "what_is_breast_cancer",
+    element: <BreastCancer/>
   }
 ])
 
