@@ -41,7 +41,7 @@ const CancerInfo = () => {
         </div>
       <h3>Breastcare Solutions</h3>
       <p>Look Good Feel Better for Teens is a unique, free program for teenage cancer patients.</p>
-      <a href="BreastCare-sol.html">Read More</a>
+      <span>Read More</span>
     </div>
     <div class="info-card">
         <div class="icon-container">
@@ -52,7 +52,7 @@ const CancerInfo = () => {
         Learn how to perform a self-examination with our interactive 3D model and easy-to-follow animations, designed to guide you step-by-step through 
         the process from the comfort of your home.
       </p>
-      <a href="#self_examination" onClick={handleSympthomClick}>Read More</a>
+      <span onClick={handleSympthomClick}>Read More</span>
     </div>
     <div class="info-card">
         <div class="icon-container">
@@ -61,7 +61,7 @@ const CancerInfo = () => {
       <h3>Community</h3>
       <p>Join our local Algerian community, where you can access a blog, hear from our doctors, and connect with others. Share your own 
         experiences and know that you are not alone in this journey..</p>
-      <a href="#Bolg" onClick={handleBlogClick}>Read More</a>
+      <span onClick={handleBlogClick}>Read More</span>
     </div>
     <div class="info-card">
         <div class="icon-container">
@@ -70,7 +70,7 @@ const CancerInfo = () => {
       <h3>Where to get help</h3>
       <p>Find nearby doctors and available locations for 
         scans—because a scan can detect what you can't.</p>
-      <a href="Help.html">Read More</a>
+      <span>Read More</span>
     </div>
   </section>
 

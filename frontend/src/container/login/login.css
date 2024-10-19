@@ -207,3 +207,18 @@
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+
+
+@media screen and (max-width: 540px){
+    .container{
+        width: 768px;
+        max-width: 90%;
+        min-height: 460px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 90%;
+    }
+}

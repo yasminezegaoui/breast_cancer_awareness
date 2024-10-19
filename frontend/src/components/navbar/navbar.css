@@ -3,7 +3,7 @@ ul {
     list-style: none;
 }
 
-.navbar a {
+.navbar p {
     text-decoration: none;
     color: rgb(107, 211, 242);
 }
@@ -33,6 +33,7 @@ ul {
     border-radius: 50px;
     width: 180px;
     height: 70px;
+    cursor: pointer;
 }
 
 .logo img{
@@ -52,14 +53,15 @@ ul {
     color: #260c6e;
   }
 
-.nav-links a {
+.nav-links p {
     padding: 10px 20px;
     font-weight: bold;
     text-decoration: none;
     color: rgb(10, 187, 241);
+    cursor: pointer;
 }
 
-.nav-links a:hover {
+.nav-links p:hover {
     background-color: #ff69b4;
     color: white;
     border-radius: 5px;
@@ -75,3 +77,79 @@ ul {
     color: gray;
     cursor: not-allowed;
 }
+
+@media screen and (max-width: 768px) {
+    .navbar {
+      padding: 10px 20px;
+    }
+  
+    .logo {
+      width: 150px;
+      height: 50px;
+      font-size: 1.2rem;
+    }
+
+    .logo img{
+        height:148px;
+        width:auto;
+        position: fixed;
+        bottom: 79.5%;
+        left: 9px;
+    }
+  
+    .nav-links {
+      gap: 10px;
+    }
+  
+    .nav-links a {
+      padding: 5px 10px;
+      font-size: 0.9rem;
+    }
+  }  
+
+  @media screen and (max-width: 1024px){
+    .logo img{
+        height:154px;
+        width:auto;
+        position: fixed;
+        bottom: 80.5%;
+        left: 9px;
+    }
+  }
+
+  @media screen and (max-width: 540px){
+    .logo img{
+        height:144px;
+        width:auto;
+        position: fixed;
+        bottom: 84%;
+        left: 9px;
+    }
+    .nav-links {
+        gap: 5px;
+      }
+    
+      .nav-links a {
+        padding: 5px 10px;
+        font-size: 0.7rem;
+      }
+      .logo {
+        width: 140px;
+        height: 50px;
+        font-size: 1rem;
+      }
+  }
+
+  @media screen and (max-width: 820px){
+    .logo img{
+        height:154px;
+        width:auto;
+        position: fixed;
+        bottom: 88%;
+        left: 9px;
+    }
+    .nav-links a {
+        padding: 5px 10px;
+        font-size: 1rem;
+      }
+  }

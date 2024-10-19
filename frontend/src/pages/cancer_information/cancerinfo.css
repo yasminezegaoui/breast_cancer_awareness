@@ -98,12 +98,13 @@
     font-family: 'poppins';
   }
   
-  .info-card a {
+  .info-card span {
     color: #ff69b4;
     font-weight: bold;
+    cursor: pointer;
   }
   
-  .info-card a:hover {
+  .info-card span:hover {
     color: #ff85c5;
   }
 

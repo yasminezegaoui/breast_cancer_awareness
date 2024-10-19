@@ -7,6 +7,7 @@
     background-image: url('../../assets/siteimg.png'); 
     background-size: cover; 
     background-position: center; 
+    background-repeat: no-repeat;
   }
   
   .content {
@@ -19,8 +20,9 @@
     text-align: center;
   }
   
-  .content a{
-    text-decoration: none;
+  .content .join-button{
+    color: white;
+    cursor: pointer;
   }
 
   .content h1 {
@@ -56,5 +58,19 @@
   .join-button:hover {
     background-color: #ff85c5;
   }
-  
+
+
+  @media screen and (max-width: 768px){
+    .content{
+      margin-left: 290px;
+    }
+    .content h1{
+      font-size: 55PX;
+    }
+
+    .content p{
+      margin: 35px 0;
+      font-size: 1.1rem;
+    }
+  }
   

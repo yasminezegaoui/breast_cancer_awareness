@@ -33,17 +33,17 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <a href="#home">
-          <div className="logo">
+        <p>
+          <div className="logo" onClick={handleHomeClick}>
             <img src={logo} alt="Logo" /> Save Her<span> & </span>Him
           </div>
-        </a>
+        </p>
         <ul className="nav-links">
-          <li><a href="#home" onClick={handleHomeClick}>Home</a></li>
-          <li><a href="#about" onClick={handleAboutClick}>About Us</a></li>
-          <li><a href="#cancer-info" onClick={handleClick}>Cancer Info</a></li>
-          <li><a href="#signin" id="quiz-link" className="disabled" onClick={handleJoinClick}>Sympthom</a></li>
-          <li><a href="#signin" id="blog-link" className="disabled" onClick={handleJoinClick}>Blog</a></li>
+          <li><p onClick={handleHomeClick}>Home</p></li>
+          <li><p onClick={handleAboutClick}>About Us</p></li>
+          <li><p onClick={handleClick}>Cancer Info</p></li>
+          <li><p id="quiz-link" className="disabled" onClick={handleJoinClick}>Sympthom</p></li>
+          <li><p id="blog-link" className="disabled" onClick={handleJoinClick}>Blog</p></li>
         </ul>
       </nav>
     </>
