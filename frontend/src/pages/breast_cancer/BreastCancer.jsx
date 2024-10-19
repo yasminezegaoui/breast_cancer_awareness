@@ -33,9 +33,9 @@ const BreastCancer = () => {
             <p>One of the simplest and most effective ways to catch breast cancer early is through regular self-examinations. By checking for lumps, changes in breast size, or skin abnormalities, individuals can detect potential issues before they become severe.</p>
             <p>To make this easier, we offer an interactive 2D self-examination tool on our website. This tool guides both men and women through the steps of examining their breasts for signs of concern, helping you become familiar with your body and notice any unusual changes early on. Remember, honesty is key during the self-examination process—there’s no need to rush or skip steps. Early detection can save lives.</p>
           </div>
-          <div className='section-2-middle'>
+          {/* <div className='section-2-middle'>
             <img src={heros} alt="" />
-          </div>
+          </div> */}
           <div className='section-2-right'>
             <h2>How to Protect Yourself from Breast Cancer</h2>
             <p>While there is no guaranteed way to prevent breast cancer, certain lifestyle changes can reduce your risk:</p>
@@ -49,7 +49,7 @@ const BreastCancer = () => {
         <div className='section-3-content'>
           <div className='paragraphs'>
             <h2>How to Fight Breast Cancer</h2>
-            <p>Fighting breast cancer involves a combination of personal responsibility, community support, and medical advancements. Here are ways you can actively fight against breast cancer:</p>
+            <p id='par'>Fighting breast cancer involves a combination of personal responsibility, community support, and medical advancements. Here are ways you can actively fight against breast cancer:</p>
             <p>1. Regular Screenings: Schedule routine mammograms and checkups, especially if you’re at higher risk.</p>
             <p>2. Education: Share knowledge about breast cancer with your community. The more people know, the better prepared they are to act early.</p>
             <p>3. Support: Whether through donating, volunteering, or simply offering emotional support to someone going through treatment, every action counts.</p>
