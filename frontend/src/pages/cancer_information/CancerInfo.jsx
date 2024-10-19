@@ -39,7 +39,7 @@ const CancerInfo = () => {
         <div class="icon-container">
           {/* <img src={stethoscope} alt="" /> */}
         </div>
-      <h3>Breastcare Solutions</h3>
+      <h3>What is Breast Cancer?</h3>
       <p>Look Good Feel Better for Teens is a unique, free program for teenage cancer patients.</p>
       <span>Read More</span>
     </div>
