@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import './blog.css';
 import Navbar from '../../components/navbar/Navbar';
 import post from '../../assets/post1.jfif';
@@ -6,9 +6,22 @@ import vid1 from '../../assets/vid1.mp4'
 import vid2 from '../../assets/vid2.mp4'
 import vid3 from '../../assets/Vid3.mp4'
 import vid4 from '../../assets/Vid4.mp4'
-import vid5 from '../../assets/Vid5.mp4'
+import vid5 from '../../assets/vid5.mp4'
+import vid51 from '../../assets/vid5-2.mp4'
+import vid6 from '../../assets/vid6.mp4'
+import vid7 from '../../assets/vid7.mp4'
+
 
 const Blog = () => {
+  useEffect(() => {
+    // Generate random colors for profile pictures
+    const profilePics = document.querySelectorAll('.profile-pic');
+    profilePics.forEach(pic => {
+      const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+      pic.style.backgroundColor = randomColor;
+    });
+  }, []);
+
   return (
     <>
     <Navbar/>
@@ -24,7 +37,7 @@ const Blog = () => {
         
         <div class="content-type">
           <label class="radio-option">
-            <input type="radio" name="content-type" value="text" checked/> Text
+            <input type="radio" name="content-type" value="text" defaultchecked/> Text
           </label>
           <label class="radio-option">
             <input type="radio" name="content-type" value="image"/> Image
@@ -35,7 +48,7 @@ const Blog = () => {
         </div>
   
        
-        <label for="file-upload" class="custom-file-upload">
+        <label htmlFor="file-upload" class="custom-file-upload">
           Choose file
         </label>
         <input id="file-upload" type="file" name="post-file" accept="image/*,video/*"/>
@@ -59,54 +72,136 @@ const Blog = () => {
         <div class="post">
           <div class="post-header">
             <div class="profile-pic"></div> 
-            <span class="username"> Asma</span>
+            <span class="username">Mounia</span>
           </div>
-          <p> What is breast cancer <span>#doctor #forHERandHIM</span></p>
+          <p>Les facteurs de risque de cancer du sein <span>#cancerfree</span></p>
           <video controls>
             <source src={vid1} type="video/mp4"/>
           </video>
+          <div class="like-container">
+            <button class="like-btn">
+              <span class="like-icon">❤️</span> 
+              <span class="like-count">0</span> Likes
+            </button>
+          </div>
         </div>
 
         <div class="post">
-            <div class="post-header">
-              <div class="profile-pic"></div> 
-              <span class="username"> Mounia </span>
-            </div>
-            <p> Les facteurs de risque de cancer du sein<span> #cancerfree</span></p>
-            <video controls>
-              <source src={vid2} type="video/mp4"/>
-            </video>
+          <div class="post-header">
+            <div class="profile-pic"></div> 
+            <span class="username">Mounia</span>
           </div>
-          <div class="post">
-            <div class="post-header">
-              <div class="profile-pic"></div> 
-              <span class="username"> Celia</span>
-            </div>
-            <p>Qu’est-ce que le cancer du sein?</p>
-            <video controls>
-              <source src={vid3} type="video/mp4"/>
-            </video>
+          <p>Les facteurs de risque de cancer du sein <span>#cancerfree</span></p>
+          <video controls>
+            <source src={vid2} type="video/mp4"/>
+          </video>
+          <div class="like-container">
+            <button class="like-btn">
+              <span class="like-icon">❤️</span> 
+              <span class="like-count">0</span> Likes
+            </button>
           </div>
-          <div class="post">
-            <div class="post-header">
-              <div class="profile-pic"></div> 
-              <span class="username"> Ahmed</span>
-            </div>
-            <p>Arwah nfehmek f cancer du sein<span> #wi9ayakhirmen3ilaj #dz</span></p>
-            <video controls>
-              <source src={vid4} type="video/mp4"/>
-            </video>
+        </div>
+        <div class="post">
+          <div class="post-header">
+            <div class="profile-pic"></div> 
+            <span class="username">Mounia</span>
           </div>
-          <div class="post">
-            <div class="post-header">
-              <div class="profile-pic"></div> 
-              <span class="username"> Chanez</span>
-            </div>
-            <p></p>
-            <video controls>
-              <source src={vid5} type="video/mp4"/>
-            </video>
+          <p>Les facteurs de risque de cancer du sein <span>#cancerfree</span></p>
+          <video controls>
+            <source src={vid3} type="video/mp4"/>
+          </video>
+          <div class="like-container">
+            <button class="like-btn">
+              <span class="like-icon">❤️</span> 
+              <span class="like-count">0</span> Likes
+            </button>
           </div>
+        </div>
+        <div class="post">
+          <div class="post-header">
+            <div class="profile-pic"></div> 
+            <span class="username">Mounia</span>
+          </div>
+          <p>Les facteurs de risque de cancer du sein <span>#cancerfree</span></p>
+          <video controls>
+            <source src={vid4} type="video/mp4"/>
+          </video>
+          <div class="like-container">
+            <button class="like-btn">
+              <span class="like-icon">❤️</span> 
+              <span class="like-count">0</span> Likes
+            </button>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-header">
+            <div class="profile-pic"></div> 
+            <span class="username">Mounia</span>
+          </div>
+          <p>Les facteurs de risque de cancer du sein <span>#cancerfree</span></p>
+          <video controls>
+            <source src={vid5} type="video/mp4"/>
+          </video>
+          <div class="like-container">
+            <button class="like-btn">
+              <span class="like-icon">❤️</span> 
+              <span class="like-count">0</span> Likes
+            </button>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-header">
+            <div class="profile-pic"></div> 
+            <span class="username">Mounia</span>
+          </div>
+          <p>Les facteurs de risque de cancer du sein <span>#cancerfree</span></p>
+          <video controls>
+            <source src={vid51} type="video/mp4"/>
+          </video>
+          <div class="like-container">
+            <button class="like-btn">
+              <span class="like-icon">❤️</span> 
+              <span class="like-count">0</span> Likes
+            </button>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-header">
+            <div class="profile-pic"></div> 
+            <span class="username">Mounia</span>
+          </div>
+          <p>Les facteurs de risque de cancer du sein <span>#cancerfree</span></p>
+          <video controls>
+            <source src={vid6} type="video/mp4"/>
+          </video>
+          <div class="like-container">
+            <button class="like-btn">
+              <span class="like-icon">❤️</span> 
+              <span class="like-count">0</span> Likes
+            </button>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-header">
+            <div class="profile-pic"></div> 
+            <span class="username">Mounia</span>
+          </div>
+          <p>Les facteurs de risque de cancer du sein <span>#cancerfree</span></p>
+          <video controls>
+            <source src={vid7} type="video/mp4"/>
+          </video>
+          <div class="like-container">
+            <button class="like-btn">
+              <span class="like-icon">❤️</span> 
+              <span class="like-count">0</span> Likes
+            </button>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -116,3 +211,4 @@ const Blog = () => {
 }
 
 export default Blog
+
