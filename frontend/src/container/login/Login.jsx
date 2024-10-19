@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import './login.css'
 import axios from 'axios';
+<<<<<<< HEAD
+=======
+import Navbar from '../../components/navbar/Navbar';
+>>>>>>> e6c68f0 (update)
 
 const Login = () => {
   const handleRegisterClick = async () => {
@@ -110,6 +114,10 @@ const Login = () => {
 
   return (
     <>
+<<<<<<< HEAD
+=======
+    <Navbar/>
+>>>>>>> e6c68f0 (update)
     <div className='login-container'>
     <div className={`container ${isActive ? 'active' : ''}`} id='container'>
       <div className='form-container sign-up'>
