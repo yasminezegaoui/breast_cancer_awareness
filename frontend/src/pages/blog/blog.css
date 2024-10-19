@@ -1,0 +1,176 @@
+.blog-wrapper{
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    font-family: 'poppins';
+}
+
+.blog-section {
+    padding: 100px 20px;
+    background-color: #ffe0e9;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #F4D0DE, #ABC5EA);
+}
+
+.blog-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.highlight-button2 {
+    display: inline-block;
+    background-color: #90c2fc;
+    border-radius: 20px;
+    opacity: 0.9;
+    color: #ff69b4;
+    width: 500px;
+    padding: 10px 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: default;
+    transition: background-color 0.3s ease;
+    margin-left: 300px;
+}
+
+
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.upload-form textarea {
+    resize: none;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100px;
+}
+
+
+.radio-option {
+    font-size: 1rem;
+    color: #555;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.upload-form input[type="file"] {
+    display: none;
+}
+
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #ff69b4;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+    background-color: #ff1493;
+}
+
+.upload-form button {
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-form button:hover {
+    background-color: #ff1493;
+}
+
+
+.posts-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+}
+
+
+.post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff69b4; 
+}
+
+
+.post-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.post-header .username {
+    font-weight: bold;
+    color: #333;
+}
+
+
+.post img, .post video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.post p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .post {
+        max-width: 100%;
+    }
+
+    .highlight-button2 {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .upload-form {
+        padding: 15px;
+    }
+}
