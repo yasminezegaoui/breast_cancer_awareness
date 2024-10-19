@@ -129,6 +129,9 @@
     text-decoration: underline; /* Underline the text when hovered */
   }
   
+  .donate-button span {
+    cursor: pointer;
+  }
   
   /* Footer */
   .footer {

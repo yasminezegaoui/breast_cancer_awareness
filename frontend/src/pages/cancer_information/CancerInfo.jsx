@@ -22,6 +22,10 @@ const CancerInfo = () => {
     navigate('/what_is_breast_cancer');
   };
 
+  const handleDonateClick = () => {
+    navigate('/donation');
+  }; 
+
   return (
   <>
     <Navbar/>
@@ -30,7 +34,7 @@ const CancerInfo = () => {
       <img class="ribbon" alt=''/>
       <h1>Fight Breast Cancer for <span>Him </span>and Her.</h1>
       <p>Let's get it off our chests</p>
-      <a href="#donate" class="donate-button">Donate Now</a>
+      <span class="donate-button" onClick={handleDonateClick}>Donate Now</span>
     </div>
     <div class="hero-image">
       <img src="" alt=""/>
