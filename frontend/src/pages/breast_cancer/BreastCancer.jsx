@@ -4,6 +4,8 @@ import Navbar from '../../components/navbar/Navbar';
 import IMG from '../../assets/téléchargé-1.png';
 import design from '../../assets/Design.png'
 
+/////////////////
+
 const BreastCancer = () => {
   return (
     <>
